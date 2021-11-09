@@ -1,6 +1,16 @@
 import colors from 'vuetify/es5/util/colors'
 
+//追記
+require("dotenv").config();
+const { API_KEY } = process.env;
+const axios = require("axios");
+
 export default {
+  //追記
+  env: {
+    API_KEY
+  },
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
