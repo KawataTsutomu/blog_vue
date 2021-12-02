@@ -6,10 +6,7 @@ const { API_KEY } = process.env;
 const axios = require("axios");
 
 export default {
-  //追記
-  env: {
-    API_KEY
-  },
+
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -81,7 +78,10 @@ export default {
       }
     }
   },
-
+  //追記
+  env: {
+    API_KEY
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
